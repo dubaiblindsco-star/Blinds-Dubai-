@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shop Window Blinds Dubai – Dubai Blinds Co.</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--gold:#C9A55A;--gold-light:#E8D5A3;--dark:#0D0D0D;--dark2:#131313;--dark3:#1A1A1A;--dark4:#242424;--white:#F5F2EC;--muted:#9A9790;--border:rgba(201,165,90,0.15)}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;background:var(--dark);color:var(--white);overflow-x:hidden;line-height:1.7}
+a{color:inherit;text-decoration:none}
+img{display:block;width:100%;object-fit:cover}
+.tag{font-size:.7rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:.7rem;display:block}
+.divider{width:55px;height:2px;background:var(--gold);margin:1.2rem 0 1.5rem}
+.btn-gold{display:inline-block;background:var(--gold);color:var(--dark);padding:.85rem 2rem;font-size:.85rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;border-radius:2px;transition:all .3s}
+.btn-gold:hover{background:var(--gold-light);transform:translateY(-2px)}
+.btn-outline{display:inline-block;border:1px solid rgba(201,165,90,.5);color:var(--gold);padding:.85rem 2rem;font-size:.85rem;font-weight:500;letter-spacing:.06em;text-transform:uppercase;border-radius:2px;transition:all .3s}
+.btn-outline:hover{border-color:var(--gold);background:rgba(201,165,90,.07)}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:1.1rem 4rem;background:rgba(13,13,13,0.95);border-bottom:1px solid var(--border);backdrop-filter:blur(16px)}
+.nav-logo{font-family:'Playfair Display',serif;font-size:1.45rem;font-weight:700;color:var(--gold);letter-spacing:.03em}
+.nav-links{display:flex;gap:2rem;list-style:none}
+.nav-links a{font-size:.82rem;font-weight:400;letter-spacing:.07em;text-transform:uppercase;color:var(--white);transition:color .3s}
+.nav-links a:hover{color:var(--gold)}
+.nav-cta{background:var(--gold)!important;color:var(--dark)!important;padding:.55rem 1.3rem;border-radius:2px;font-weight:600!important}
+
+/* OFFER STRIP */
+.offer-strip{background:var(--gold);text-align:center;padding:.75rem 2rem;font-size:.82rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--dark);margin-top:66px}
+
+/* HERO */
+.hero{min-height:100vh;display:grid;grid-template-columns:1fr 1fr}
+.hero-left{display:flex;flex-direction:column;justify-content:center;padding:5rem 4rem;background:var(--dark)}
+.hero-right{position:relative;overflow:hidden}
+.hero-right img{height:100%;width:100%;object-fit:cover;filter:brightness(.75)}
+.hero-right::after{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:linear-gradient(to right,var(--dark) 0%,transparent 40%)}
+.hero-badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(201,165,90,.1);border:1px solid rgba(201,165,90,.3);color:var(--gold);font-size:.75rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;padding:.45rem 1rem;border-radius:2px;margin-bottom:1.8rem;width:fit-content}
+.hero h1{font-family:'Playfair Display',serif;font-size:clamp(2.6rem,4.5vw,4.2rem);font-weight:900;line-height:1.06;margin-bottom:1.2rem}
+.hero h1 .gold{color:var(--gold);font-style:italic}
+.hero-sub{font-size:1.05rem;color:var(--muted);font-weight:300;max-width:480px;margin-bottom:2rem;line-height:1.75}
+.hero-actions{display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:3rem}
+.hero-stats{display:flex;gap:2.5rem;padding-top:2.5rem;border-top:1px solid var(--border)}
+.stat-num{font-family:'Playfair Display',serif;font-size:2rem;font-weight:700;color:var(--gold);line-height:1}
+.stat-label{font-size:.7rem;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;margin-top:.3rem}
+
+/* INTRO */
+.intro-section{padding:6rem 4rem;display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;background:var(--dark2)}
+.intro-img{border-radius:4px;overflow:hidden;position:relative;height:480px}
+.intro-img img{height:100%;width:100%;object-fit:cover}
+.intro-img-badge{position:absolute;bottom:1.8rem;left:1.8rem;background:var(--gold);color:var(--dark);padding:.7rem 1.2rem;border-radius:2px;font-size:.82rem;font-weight:700;letter-spacing:.05em}
+.intro-content h2{font-family:'Playfair Display',serif;font-size:clamp(1.9rem,3vw,2.8rem);font-weight:700;line-height:1.12;margin-bottom:1.2rem}
+.intro-content p{font-size:.95rem;color:var(--muted);line-height:1.8;margin-bottom:1rem}
+.intro-features{display:grid;grid-template-columns:1fr 1fr;gap:.8rem;margin:2rem 0}
+.intro-feat{display:flex;align-items:center;gap:.6rem;font-size:.85rem;color:var(--white)}
+.intro-feat::before{content:'✓';color:var(--gold);font-weight:700;font-size:.9rem;flex-shrink:0}
+
+/* PRODUCTS */
+.products-section{padding:6rem 4rem;background:var(--dark3)}
+.sec-header{text-align:center;max-width:650px;margin:0 auto 3.5rem}
+.sec-header .divider{margin:1.2rem auto 1.5rem}
+.sec-header h2{font-family:'Playfair Display',serif;font-size:clamp(1.9rem,3vw,2.8rem);font-weight:700;line-height:1.12}
+.sec-header p{font-size:.95rem;color:var(--muted)}
+.products-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.5rem}
+.product-card{background:var(--dark2);border:1px solid var(--border);border-radius:4px;overflow:hidden;transition:all .35s;display:block;color:var(--white)}
+.product-card:hover{transform:translateY(-6px);border-color:rgba(201,165,90,.4);box-shadow:0 16px 40px rgba(0,0,0,.5)}
+.product-img{height:200px;overflow:hidden;position:relative}
+.product-img img{height:100%;width:100%;object-fit:cover;transition:transform .5s}
+.product-card:hover .product-img img{transform:scale(1.07)}
+.product-badge{position:absolute;top:.8rem;right:.8rem;background:var(--gold);color:var(--dark);font-size:.65rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.3rem .7rem;border-radius:2px}
+.product-body{padding:1.4rem 1.5rem}
+.product-body h3{font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:700;margin-bottom:.5rem}
+.product-body p{font-size:.82rem;color:var(--muted);line-height:1.65;margin-bottom:1rem}
+.product-link{font-size:.78rem;font-weight:600;color:var(--gold);letter-spacing:.08em;text-transform:uppercase;display:inline-flex;align-items:center;gap:.4rem;transition:gap .3s}
+.product-card:hover .product-link{gap:.7rem}
+
+/* SERVICES */
+.services-section{padding:6rem 4rem;background:var(--dark)}
+.services-header{max-width:600px;margin-bottom:4rem}
+.services-header h2{font-family:'Playfair Display',serif;font-size:clamp(1.9rem,3vw,2.8rem);font-weight:700;line-height:1.12}
+.services-header p{font-size:.95rem;color:var(--muted);margin-top:1rem}
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}
+.service-card{background:var(--dark3);border:1px solid var(--border);border-radius:4px;overflow:hidden;transition:border-color .3s}
+.service-card:hover{border-color:rgba(201,165,90,.4)}
+.service-img{height:180px;overflow:hidden}
+.service-img img{height:100%;width:100%;object-fit:cover;transition:transform .5s}
+.service-card:hover .service-img img{transform:scale(1.05)}
+.service-body{padding:1.4rem 1.5rem}
+.service-num{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:700;color:rgba(201,165,90,.3);margin-bottom:.5rem}
+.service-body h3{font-size:1rem;font-weight:600;margin-bottom:.5rem}
+.service-body p{font-size:.82rem;color:var(--muted);line-height:1.65}
+
+/* CUSTOM SHOP CARDS */
+.shop-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1.5rem;max-width:1100px;margin:2.5rem auto 0}
+.shop-card{background:var(--dark3);border:1px solid var(--border);border-radius:4px;overflow:hidden}
+.shop-card img{height:180px;width:100%;object-fit:cover}
+.shop-card-body{padding:1.2rem}
+.shop-card-body h4{font-size:.95rem;font-weight:600;margin-bottom:.4rem}
+.shop-card-body p{font-size:.8rem;color:var(--muted);line-height:1.6}
+
+/* BENEFITS */
+.benefits-section{padding:6rem 4rem;background:var(--dark2);display:grid;grid-template-columns:1.1fr 1fr;gap:5rem;align-items:center}
+.benefits-img{border-radius:4px;overflow:hidden;height:520px;position:relative}
+.benefits-img img{height:100%;width:100%;object-fit:cover}
+.benefits-img-overlay{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(13,13,13,.9));padding:2rem 1.8rem}
+.benefits-img-overlay span{font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:.3rem}
+.benefits-img-overlay strong{font-size:1.1rem;font-weight:500}
+.benefits-content h2{font-family:'Playfair Display',serif;font-size:clamp(1.7rem,2.5vw,2.4rem);font-weight:700;line-height:1.12}
+.benefit-list{margin-top:2rem;display:flex;flex-direction:column;gap:1.2rem}
+.benefit-item{display:flex;gap:1rem;align-items:flex-start;padding-bottom:1.2rem;border-bottom:1px solid rgba(255,255,255,.06)}
+.benefit-icon{width:44px;height:44px;background:rgba(201,165,90,.1);border-radius:2px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0}
+.benefit-item h4{font-size:.92rem;font-weight:600;margin-bottom:.25rem}
+.benefit-item p{font-size:.82rem;color:var(--muted);line-height:1.6}
+
+/* BUY ONLINE */
+.buyonline-section{padding:6rem 4rem;background:var(--dark3)}
+.buyonline-inner{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
+.buyonline-content h2{font-family:'Playfair Display',serif;font-size:clamp(1.7rem,2.5vw,2.4rem);font-weight:700;line-height:1.12}
+.buyonline-content > p{font-size:.95rem;color:var(--muted);line-height:1.8;margin:1.2rem 0}
+.steps-list{margin:2rem 0;display:flex;flex-direction:column;gap:1rem}
+.step-item{display:flex;gap:1rem;align-items:flex-start}
+.step-num{width:34px;height:34px;border-radius:50%;background:var(--gold);color:var(--dark);font-size:.82rem;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:.1rem}
+.step-item h4{font-size:.9rem;font-weight:600;margin-bottom:.2rem}
+.step-item p{font-size:.8rem;color:var(--muted)}
+.buyonline-img{border-radius:4px;overflow:hidden;height:480px}
+.buyonline-img img{height:100%;width:100%;object-fit:cover}
+
+/* REVIEWS */
+.reviews-section{padding:6rem 4rem;background:var(--dark2)}
+.reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.review-card{background:var(--dark3);border:1px solid var(--border);border-radius:4px;padding:1.8rem;position:relative;transition:border-color .3s}
+.review-card:hover{border-color:rgba(201,165,90,.35)}
+.review-stars{color:var(--gold);font-size:.95rem;margin-bottom:1rem;letter-spacing:.1em}
+.review-text{font-size:.88rem;color:var(--muted);line-height:1.75;font-style:italic;margin-bottom:1.5rem}
+.reviewer{display:flex;align-items:center;gap:.8rem}
+.reviewer-av{width:40px;height:40px;border-radius:50%;background:rgba(201,165,90,.15);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.85rem;color:var(--gold);flex-shrink:0}
+.reviewer-name{font-size:.88rem;font-weight:600}
+.reviewer-loc{font-size:.74rem;color:var(--muted)}
+.review-quote{position:absolute;top:1.4rem;right:1.6rem;font-size:3rem;color:rgba(201,165,90,.08);font-family:'Playfair Display',serif;line-height:1}
+
+/* FIXING */
+.fixing-section{display:grid;grid-template-columns:1fr 1fr;background:var(--dark)}
+.fixing-img{height:500px;position:relative;overflow:hidden}
+.fixing-img img{height:100%;width:100%;object-fit:cover;filter:brightness(.7)}
+.fixing-content{padding:5rem 4rem;display:flex;flex-direction:column;justify-content:center}
+.fixing-content h2{font-family:'Playfair Display',serif;font-size:clamp(1.7rem,2.5vw,2.4rem);font-weight:700;line-height:1.12;margin-bottom:.8rem}
+.fixing-content > p{font-size:.95rem;color:var(--muted);line-height:1.8;margin-bottom:2rem}
+.fixing-points{display:flex;flex-direction:column;gap:1rem}
+.fixing-point{display:flex;align-items:flex-start;gap:.8rem;padding:1rem;background:var(--dark3);border:1px solid var(--border);border-radius:4px}
+.fixing-point-icon{font-size:1.1rem;color:var(--gold);flex-shrink:0;margin-top:.1rem}
+.fixing-point h4{font-size:.9rem;font-weight:600;margin-bottom:.2rem}
+.fixing-point p{font-size:.8rem;color:var(--muted);line-height:1.6}
+
+/* WHY CHOOSE */
+.wc-section{padding:6rem 4rem;background:var(--dark3);text-align:center}
+.wc-section h2{font-family:'Playfair Display',serif;font-size:clamp(2rem,3.5vw,3rem);font-weight:700}
+.wc-section > p{font-size:.95rem;color:var(--muted);max-width:560px;margin:0 auto 3.5rem}
+.wc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin-bottom:3.5rem}
+.wc-card{background:var(--dark2);border:1px solid var(--border);border-radius:4px;padding:2rem 1.5rem;transition:all .3s}
+.wc-card:hover{border-color:rgba(201,165,90,.4);transform:translateY(-4px)}
+.wc-icon{font-size:2rem;width:56px;height:56px;background:rgba(201,165,90,.08);border-radius:4px;display:flex;align-items:center;justify-content:center;margin:0 auto 1.2rem}
+.wc-card h4{font-size:1rem;font-weight:600;margin-bottom:.5rem}
+.wc-card p{font-size:.82rem;color:var(--muted);line-height:1.65}
+.wc-cta{background:linear-gradient(135deg,rgba(201,165,90,.12),rgba(201,165,90,.04));border:1px solid rgba(201,165,90,.25);border-radius:4px;padding:3rem;max-width:700px;margin:0 auto}
+.wc-cta h3{font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:700;margin-bottom:.8rem}
+.wc-cta p{font-size:.92rem;color:var(--muted);margin-bottom:1.8rem;line-height:1.7}
+.wc-cta .cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+
+/* LISTINGS */
+.listings-section{padding:5rem 4rem;background:var(--dark2)}
+.listings-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(195px,1fr));gap:.8rem;margin-top:2.5rem}
+.listing-card{background:var(--dark3);border:1px solid var(--border);border-radius:2px;padding:.8rem 1rem;display:flex;align-items:center;gap:.65rem;font-size:.8rem;color:var(--muted);transition:all .25s}
+.listing-card:hover{border-color:rgba(201,165,90,.4);color:var(--gold);background:var(--dark4)}
+.ldot{width:5px;height:5px;background:var(--gold);border-radius:50%;flex-shrink:0}
+
+/* WEB2 */
+.web2-section{padding:5rem 4rem;background:var(--dark)}
+.web2-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:1rem;margin-top:2.5rem}
+.web2-card{background:var(--dark3);border:1px solid var(--border);border-left:3px solid var(--gold);border-radius:2px;padding:1rem 1.3rem;display:flex;align-items:center;gap:.8rem;font-size:.83rem;color:var(--muted);transition:all .25s}
+.web2-card:hover{color:var(--gold);background:var(--dark4)}
+
+/* PROFILES */
+.profiles-section{padding:5rem 4rem;background:var(--dark2)}
+.profiles-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:.7rem;margin-top:2.5rem}
+.profile-pill{background:var(--dark3);border:1px solid var(--border);border-radius:2px;padding:.65rem 1rem;text-align:center;font-size:.78rem;color:var(--muted);transition:all .25s;display:block}
+.profile-pill:hover{color:var(--gold);border-color:rgba(201,165,90,.4);background:rgba(201,165,90,.04)}
+
+/* CONTACT */
+.contact-section{padding:6rem 4rem;background:var(--dark3);display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
+.contact-section h2{font-family:'Playfair Display',serif;font-size:clamp(1.9rem,3vw,2.6rem);font-weight:700;line-height:1.12}
+.contact-section > div > p{font-size:.95rem;color:var(--muted);line-height:1.8;margin:1.2rem 0 2rem}
+.contact-details{display:flex;flex-direction:column;gap:1.2rem;margin-bottom:2rem}
+.cdet{display:flex;align-items:flex-start;gap:1rem}
+.cdet-icon{width:44px;height:44px;background:rgba(201,165,90,.1);border-radius:2px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;color:var(--gold);flex-shrink:0}
+.cdet strong{display:block;font-size:.7rem;color:var(--muted);letter-spacing:.12em;text-transform:uppercase;margin-bottom:.25rem}
+.cdet a,.cdet span{font-size:.95rem;color:var(--white)}
+.cdet a:hover{color:var(--gold)}
+.contact-map{border-radius:4px;overflow:hidden;border:1px solid var(--border);height:380px}
+.contact-map iframe{width:100%;height:100%;border:none}
+
+/* FOOTER */
+footer{background:var(--dark);border-top:1px solid var(--border);padding:3rem 4rem}
+.footer-top{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:3rem;margin-bottom:2.5rem}
+.footer-logo{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:700;color:var(--gold);margin-bottom:.8rem}
+.footer-about{font-size:.82rem;color:var(--muted);line-height:1.7}
+.footer-col h4{font-size:.75rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem}
+.footer-col ul{list-style:none;display:flex;flex-direction:column;gap:.6rem}
+.footer-col ul li a{font-size:.82rem;color:var(--muted);transition:color .3s}
+.footer-col ul li a:hover{color:var(--gold)}
+.footer-bottom{border-top:1px solid var(--border);padding-top:2rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
+.footer-copy{font-size:.76rem;color:var(--muted)}
+
+@media(max-width:1024px){
+  nav{padding:1rem 1.5rem}
+  .nav-links{display:none}
+  .hero{grid-template-columns:1fr}
+  .hero-right{display:none}
+  .hero-left{padding:5rem 1.8rem 3rem}
+  .intro-section,.benefits-section,.buyonline-inner,.contact-section{grid-template-columns:1fr;gap:2.5rem}
+  .fixing-section{grid-template-columns:1fr}
+  .services-grid,.reviews-grid{grid-template-columns:1fr 1fr}
+  .wc-grid{grid-template-columns:1fr 1fr}
+  .footer-top{grid-template-columns:1fr 1fr}
+  .intro-section,.products-section,.services-section,.benefits-section,.buyonline-section,.reviews-section,.fixing-content,.wc-section,.listings-section,.web2-section,.profiles-section,.contact-section,.listings-section{padding:4rem 1.8rem}
+  footer{padding:2.5rem 1.8rem}
+}
+@media(max-width:600px){
+  .services-grid,.reviews-grid,.wc-grid{grid-template-columns:1fr}
+  .hero h1{font-size:2.2rem}
+  .fixing-img{height:280px}
+  .footer-top{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="https://dubaiblindsco.com/" class="nav-logo">Dubai Blinds Co.</a>
+  <ul class="nav-links">
+    <li><a href="#products">Products</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="tel:+971567555833" class="nav-cta">Call Now</a></li>
+  </ul>
+</nav>
+
+<div class="offer-strip">🏷 Limited Time — Flat 25% OFF + Free 24-Hour Installation on All Blinds · Call: +971 567 555 833</div>
+
+<!-- HERO — H1 -->
+<section class="hero" id="home">
+  <div class="hero-left">
+    <div class="hero-badge">✦ Dubai's #1 Blinds Specialists</div>
+    <h1>Shop Window <a href="https://dubaiblindsco.com/" class="gold">Blinds Dubai</a> For Every Home</h1>
+    <p class="hero-sub">Premium custom-crafted window blinds for residential and commercial spaces across Dubai. Expert installation, superior materials, guaranteed satisfaction.</p>
+    <div class="hero-actions">
+      <a href="https://dubaiblindsco.com/" class="btn-gold">Explore Collection</a>
+      <a href="tel:+971567555833" class="btn-outline">+971 567 555 833</a>
+    </div>
+    <div class="hero-stats">
+      <div><div class="stat-num">5000+</div><div class="stat-label">Projects Done</div></div>
+      <div><div class="stat-num">10+</div><div class="stat-label">Blind Types</div></div>
+      <div><div class="stat-num">24hr</div><div class="stat-label">Installation</div></div>
+      <div><div class="stat-num">100%</div><div class="stat-label">Satisfaction</div></div>
+    </div>
+  </div>
+  <div class="hero-right">
+    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=85" alt="Window Blinds Dubai luxury interior">
+  </div>
+</section>
+
+<!-- INTRO — H2 -->
+<section class="intro-section" id="about">
+  <div class="intro-img">
+    <img src="https://images.unsplash.com/photo-1560448204-603b3fc33ddc?w=800&q=85" alt="Affordable quality blinds Dubai showroom">
+    <div class="intro-img-badge">Flat 25% OFF — Order Today</div>
+  </div>
+  <div class="intro-content">
+    <span class="tag">✦ About Dubai Blinds Co.</span>
+    <h2>We Supply The Best Quality Affordable Blinds In Dubai</h2>
+    <div class="divider"></div>
+    <p>At Dubai Blinds Co., we believe beautiful window treatments should never come at an unreasonable price. Our mission is to deliver premium-quality, custom-made <a href="https://dubaiblindsco.com/" style="color:var(--gold)">blinds in Dubai</a> that transform every room without stretching your budget.</p>
+    <p>From cosy bedrooms to expansive office floors, our expert team provides end-to-end solutions — consultation, custom manufacturing, professional installation and aftercare. Every blind is crafted with precision using high-grade materials that withstand Dubai's demanding climate.</p>
+    <div class="intro-features">
+      <div class="intro-feat">Premium materials guaranteed</div>
+      <div class="intro-feat">Custom made to measure</div>
+      <div class="intro-feat">Same-day consultation</div>
+      <div class="intro-feat">Free installation included</div>
+      <div class="intro-feat">UAE-wide supply network</div>
+      <div class="intro-feat">Full aftercare support</div>
+    </div>
+    <a href="https://dubaiblindsco.com/" class="btn-gold">Shop All Blinds</a>
+  </div>
+</section>
+
+<!-- PRODUCTS — H2 -->
+<section class="products-section" id="products">
+  <div class="sec-header">
+    <span class="tag">✦ Our Collection</span>
+    <h2>Our Featured Blinds Dubai Collection</h2>
+    <div class="divider"></div>
+    <p>Explore our complete range of bespoke, custom-made window blinds — each designed to complement your interior and serve your exact functional needs.</p>
+  </div>
+  <div class="products-grid">
+
+    <a href="https://dubaiblindsco.com/blackout-blinds/" class="product-card">
+      <div class="product-img">
+        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&q=80" alt="Blackout Blinds Dubai">
+        <span class="product-badge">Bestseller</span>
+      </div>
+      <div class="product-body">
+        <h3>Blackout Blinds</h3>
+        <p>Complete 100% light blockage for perfect sleep in bedrooms, home theatres and nurseries. Available in dozens of premium fabrics.</p>
+        <span class="product-link">View Collection →</span>
+      </div>
+    </a>
+
+    <a href="https://dubaiblindsco.com/duplex-blinds/" class="product-card">
+      <div class="product-img">
+        <img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?w=600&q=80" alt="Duplex Zebra Blinds Dubai">
+        <span class="product-badge">Trending</span>
+      </div>
+      <div class="product-body">
+        <h3>Duplex Blinds</h3>
+        <p>Dual-layer zebra blinds that alternate between sheer and solid panels — giving full control over light and privacy all day long.</p>
+        <span class="product-link">View Collection →</span>
+      </div>
+    </a>
+
+    <a href="https://dubaiblindsco.com/motorized-blinds/" class="product-card">
+      <div class="product-img">
+        <img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=600&q=80" alt="Motorized Smart Blinds Dubai">
+        <span class="product-badge">Smart Home</span>
+      </div>
+      <div class="product-body">
+        <h3>Motorized Blinds</h3>
+        <p>Remote or app-controlled smart blinds compatible with Alexa, Google Home and Apple HomeKit — for the modern Dubai home.</p>
+        <span class="product-link">View Collection →</span>
+      </div>
+    </a>
+
+    <a href="https://dubaiblindsco.com/roller-blinds/" class="product-card">
+      <div class="product-img">
+        <img src="https://images.unsplash.com/photo-1598928636135-d146006ff4be?w=600&q=80" alt="Roller Blinds Dubai">
+      </div>
+      <div class="product-body">
+        <h3>Roller Blinds</h3>
+        <p>Clean, minimalist roller blinds — the most popular choice for modern offices, kitchens and living rooms across Dubai.</p>
+        <span class="product-link">View Collection →</span>
+      </div>
+    </a>
+
+    <a href="https://dubaiblindsco.com/roman-blinds/" class="product-card">
+      <div class="product-img">
+        <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=600&q=80" alt="Roman Blinds Dubai luxury">
+        <span class="product-badge">Luxury</span>
+      </div>
+      <div class="product-body">
+        <h3>Roman Blinds</h3>
+        <p>Soft, elegant horizontal fabric folds that bring a timeless luxurious look to any window in your home or hotel space.</p>
+        <span class="product-link">View Collection →</span>
+      </div>
+    </a>
+
+    <a href="https://dubaiblindsco.com/vertical-blinds/" class="product-card">
+      <div class="product-img">
+        <img src="https://images.unsplash.com/photo-1567016432779-094069958ea5?w=600&q=80" alt="Vertical Blinds Dubai large windows">
+      </div>
+      <div class="product-body">
+        <h3>Vertical Blinds</h3>
+        <p>Perfect for floor-to-ceiling windows, patio doors and large commercial facades — superior light and privacy control.</p>
+        <span class="product-link">View Collection →</span>
+      </div>
+    </a>
+
+    <a href="https://dubaiblindsco.com/venetian-blinds/" class="product-card">
+      <div class="product-img">
+        <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=600&q=80" alt="Venetian Blinds Dubai aluminium">
+      </div>
+      <div class="product-body">
+        <h3>Venetian Blinds</h3>
+        <p>Classic horizontal aluminium or faux-wood slats giving you precise, adjustable control over light and ventilation.</p>
+        <span class="product-link">View Collection →</span>
+      </div>
+    </a>
+
+    <a href="https://dubaiblindsco.com/wooden-blinds/" class="product-card">
+      <div class="product-img">
+        <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?w=600&q=80" alt="Wooden Blinds Dubai real wood">
+        <span class="product-badge">Natural Wood</span>
+      </div>
+      <div class="product-body">
+        <h3>Wooden Blinds</h3>
+        <p>Genuine real-wood slats bringing warmth, character and a natural organic feel to every room's interior design.</p>
+        <span class="product-link">View Collection →</span>
+      </div>
+    </a>
+
+    <a href="https://dubaiblindsco.com/panel-blinds/" class="product-card">
+      <div class="product-img">
+        <img src="https://images.unsplash.com/photo-1585412727339-54e4bae3bbf9?w=600&q=80" alt="Panel Blinds Dubai contemporary">
+      </div>
+      <div class="product-body">
+        <h3>Panel Blinds</h3>
+        <p>Wide sleek fabric panels — a bold contemporary solution for large glass walls, open offices and modern interiors.</p>
+        <span class="product-link">View Collection →</span>
+      </div>
+    </a>
+
+    <a href="https://dubaiblindsco.com/" class="product-card">
+      <div class="product-img">
+        <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=600&q=80" alt="Honeycomb Blinds Dubai energy saving">
+        <span class="product-badge">Energy Saving</span>
+      </div>
+      <div class="product-body">
+        <h3>Honeycomb Blinds</h3>
+        <p>Cellular honeycomb construction provides superior thermal insulation — keeping Dubai homes cooler and cutting AC costs.</p>
+        <span class="product-link">View Collection →</span>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<!-- SERVICES — H3 -->
+<section class="services-section" id="services">
+  <div class="services-header">
+    <span class="tag">✦ What We Offer</span>
+    <h2>Get Our Premium Blinds Services</h2>
+    <div class="divider"></div>
+    <p>From custom manufacturing to same-day installation and repair — Dubai Blinds Co. covers every step of your window treatment journey, start to finish.</p>
+  </div>
+  <div class="services-grid">
+
+    <div class="service-card">
+      <div class="service-img"><img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&q=80" alt="Blinds Installation Dubai service"></div>
+      <div class="service-body">
+        <div class="service-num">01</div>
+        <h3>Blinds Installation</h3>
+        <p>Precise, damage-free installation across all Dubai areas — residential and commercial. Same-day and next-day appointment slots available.</p>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <div class="service-img"><img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Custom Blinds Dubai made to measure"></div>
+      <div class="service-body">
+        <div class="service-num">02</div>
+        <h3>Custom Blinds</h3>
+        <p>Every blind is made-to-measure — custom fabric, colour, size and mechanism, all tailored precisely to your window specification.</p>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <div class="service-img"><img src="https://images.unsplash.com/photo-1504148455328-c376907d081c?w=600&q=80" alt="Blinds Repair Fixing Dubai fast"></div>
+      <div class="service-body">
+        <div class="service-num">03</div>
+        <h3>Blinds Fixing &amp; Repair</h3>
+        <p>Broken slats, damaged mechanisms or faulty motors — our repair team restores your blinds to full working condition quickly.</p>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <div class="service-img"><img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=600&q=80" alt="Blinds Alteration Dubai resize"></div>
+      <div class="service-body">
+        <div class="service-num">04</div>
+        <h3>Blinds Alteration</h3>
+        <p>Moving home or redecorating? We resize and re-purpose your existing blinds for new windows — saving you money on full replacements.</p>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <div class="service-img"><img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80" alt="Blinds Accessories Dubai motors brackets"></div>
+      <div class="service-body">
+        <div class="service-num">05</div>
+        <h3>Blinds Accessories</h3>
+        <p>Brackets, motors, remote controls and smart home integrations — we supply the complete range of accessories for all blind types.</p>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <div class="service-img"><img src="https://images.unsplash.com/photo-1615971677499-5467cbab01c0?w=600&q=80" alt="Commercial Blinds Dubai office"></div>
+      <div class="service-body">
+        <div class="service-num">06</div>
+        <h3>Commercial Blinds</h3>
+        <p>Office towers, hotels, hospitals and retail stores — we handle large-scale projects with dedicated project management support.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CUSTOM SHOP — H2 -->
+<section style="padding:6rem 4rem;background:var(--dark2);text-align:center">
+  <span class="tag">✦ The Easy Way to Get New Blinds</span>
+  <h2 style="font-family:'Playfair Display',serif;font-size:clamp(1.9rem,3vw,2.8rem);font-weight:700;line-height:1.12;max-width:700px;margin:0 auto">Shop Custom Window Blinds with Exceptional Service</h2>
+  <div class="divider" style="margin:1.2rem auto 1.5rem"></div>
+  <p style="font-size:.95rem;color:var(--muted);max-width:650px;margin:0 auto;line-height:1.8">Every window is unique — that is why we offer a fully bespoke experience. Choose your style, fabric, colour and mechanism, and we handle everything from manufacturing to installation. Our in-home consultation makes the process effortless from start to finish.</p>
+  <div class="shop-cards">
+    <div class="shop-card">
+      <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=500&q=80" alt="In-Home Consultation Dubai Blinds">
+      <div class="shop-card-body"><h4>In-Home Consultation</h4><p>Our experts visit, measure precisely and recommend the best window treatment options for your specific space.</p></div>
+    </div>
+    <div class="shop-card">
+      <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&q=80" alt="Custom Manufacturing Blinds Dubai">
+      <div class="shop-card-body"><h4>Custom Manufacturing</h4><p>Every blind is crafted to exact measurements using premium, durable materials in your chosen fabric and colour.</p></div>
+    </div>
+    <div class="shop-card">
+      <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=500&q=80" alt="Professional Blinds Installation Dubai">
+      <div class="shop-card-body"><h4>Professional Installation</h4><p>Certified fitters complete your installation cleanly and efficiently — typically within 24 hours of order confirmation.</p></div>
+    </div>
+    <div class="shop-card">
+      <img src="https://images.unsplash.com/photo-1614538054788-85e73e16ee47?w=500&q=80" alt="After Sales Support Blinds Dubai">
+      <div class="shop-card-body"><h4>Lifetime Aftercare</h4><p>Ongoing repair, alteration and maintenance support to keep your blinds looking and performing perfectly for years.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFITS — H3 -->
+<section class="benefits-section" id="benefits">
+  <div class="benefits-img">
+    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=85" alt="Why invest window blinds Dubai home">
+    <div class="benefits-img-overlay">
+      <span>Dubai Blinds Co.</span>
+      <strong>Transforming homes across Dubai since day one</strong>
+    </div>
+  </div>
+  <div class="benefits-content">
+    <span class="tag">✦ Key Benefits</span>
+    <h2>Here's Why You Must Invest In Our Window Blinds Dubai</h2>
+    <div class="divider"></div>
+    <p style="font-size:.9rem;color:var(--muted);line-height:1.75">Window blinds are more than decoration — they are a long-term investment in your comfort, privacy and energy efficiency. Here is why Dubai homeowners choose us:</p>
+    <div class="benefit-list">
+      <div class="benefit-item">
+        <div class="benefit-icon">🌡</div>
+        <div><h4>Cut Down Cooling Costs</h4><p>Blackout and honeycomb blinds reduce heat gain significantly — keeping interiors cooler and lowering AC bills across Dubai's hot months.</p></div>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-icon">🔒</div>
+        <div><h4>Enhanced Privacy &amp; Security</h4><p>Control exactly how much of your interior is visible from outside — ideal for ground-floor apartments, home offices and villas.</p></div>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-icon">✨</div>
+        <div><h4>Elevate Your Interior Aesthetic</h4><p>The right blinds completely transform a room's character — adding texture, depth and a polished finish that curtains simply cannot match.</p></div>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-icon">💰</div>
+        <div><h4>Unbeatable Value</h4><p>Premium quality at honest prices with a flat 25% discount plus free installation — the smartest home upgrade per dirham spent in Dubai.</p></div>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-icon">⚙️</div>
+        <div><h4>Smart Home Ready</h4><p>Our motorized blinds integrate with popular smart-home platforms — control light and privacy from your phone or voice assistant.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BUY ONLINE — H3 -->
+<section class="buyonline-section" id="buy">
+  <div class="buyonline-inner">
+    <div class="buyonline-content">
+      <span class="tag">✦ Quick &amp; Simple Process</span>
+      <h2>Buy Blinds In Dubai Online For The Quickest Home Upgrades</h2>
+      <div class="divider"></div>
+      <p>Upgrading your home has never been simpler. Order your custom <a href="https://dubaiblindsco.com/" style="color:var(--gold)">window blinds in Dubai</a> online or by phone, and our team handles everything — from measuring to fitting — at a time that suits you perfectly.</p>
+      <div class="steps-list">
+        <div class="step-item">
+          <div class="step-num">1</div>
+          <div><h4>Browse &amp; Select</h4><p>Explore our full collection online or call us for a free expert recommendation tailored to your specific space and budget.</p></div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">2</div>
+          <div><h4>Free Home Measurement</h4><p>Our team visits to take precise measurements and present fabric and style samples in person — completely free of charge.</p></div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">3</div>
+          <div><h4>Custom Manufacturing</h4><p>Your blinds are crafted to exact size using the material and colour of your choice — no generic off-the-shelf products, ever.</p></div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">4</div>
+          <div><h4>24-Hour Installation</h4><p>Our certified fitters install your blinds professionally and cleanly — typically within 24 hours of order confirmation.</p></div>
+        </div>
+      </div>
+      <a href="https://dubaiblindsco.com/" class="btn-gold" style="margin-top:1rem">Order Now — 25% OFF</a>
+    </div>
+    <div class="buyonline-img">
+      <img src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?w=700&q=85" alt="Buy Blinds online Dubai quick installation">
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS — H3 -->
+<section class="reviews-section" id="reviews">
+  <div class="sec-header">
+    <span class="tag">✦ What Our Clients Say</span>
+    <h2>Feedback Of Our Customers</h2>
+    <div class="divider"></div>
+    <p>Real words from real customers across Dubai — see why thousands of homeowners and businesses trust Dubai Blinds Co.</p>
+  </div>
+  <div class="reviews-grid">
+    <div class="review-card">
+      <div class="review-quote">"</div>
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">Absolutely stunning blackout blinds in our master bedroom. The team was punctual, professional and left no mess behind. The blinds fit perfectly and the room is now completely dark — exactly what we needed!</p>
+      <div class="reviewer"><div class="reviewer-av">SA</div><div><div class="reviewer-name">Sara Al Mansouri</div><div class="reviewer-loc">Dubai Marina, Dubai</div></div></div>
+    </div>
+    <div class="review-card">
+      <div class="review-quote">"</div>
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">We ordered motorized blinds for our entire office — 14 windows. The installation was completed in a single day and the smart controls work flawlessly with our existing system. Highly recommend for commercial spaces!</p>
+      <div class="reviewer"><div class="reviewer-av">MK</div><div><div class="reviewer-name">Mohammed K.</div><div class="reviewer-loc">Business Bay, Dubai</div></div></div>
+    </div>
+    <div class="review-card">
+      <div class="review-quote">"</div>
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">The duplex zebra blinds look absolutely gorgeous in our living room. The quality is exceptional and the price with the 25% discount was unbeatable. Fast delivery, friendly staff and perfect installation!</p>
+      <div class="reviewer"><div class="reviewer-av">RA</div><div><div class="reviewer-name">Rania Ahmed</div><div class="reviewer-loc">Jumeirah, Dubai</div></div></div>
+    </div>
+    <div class="review-card">
+      <div class="review-quote">"</div>
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">I called for a repair on my old roller blinds and they fixed everything the same day. Reasonably priced, quick turnaround and a very polite team. Will definitely be ordering new blinds from them soon!</p>
+      <div class="reviewer"><div class="reviewer-av">JP</div><div><div class="reviewer-name">James P.</div><div class="reviewer-loc">Al Quoz, Dubai</div></div></div>
+    </div>
+    <div class="review-card">
+      <div class="review-quote">"</div>
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">Ordered wooden blinds for our villa — the quality is outstanding. Real wood, beautiful warm finish, perfect fit. The consultant helped us choose the right colour to match our flooring. Excellent service throughout.</p>
+      <div class="reviewer"><div class="reviewer-av">HS</div><div><div class="reviewer-name">Hira Siddiqui</div><div class="reviewer-loc">Arabian Ranches, Dubai</div></div></div>
+    </div>
+    <div class="review-card">
+      <div class="review-quote">"</div>
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">Roman blinds installed in 3 rooms and they look incredibly elegant. From first call to final installation — completely seamless. Our interior designer even complimented the quality. Will definitely recommend!</p>
+      <div class="reviewer"><div class="reviewer-av">NF</div><div><div class="reviewer-name">Nadia Farouq</div><div class="reviewer-loc">Downtown Dubai</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FIXING — H3 -->
+<div class="fixing-section" id="fixing">
+  <div class="fixing-img">
+    <img src="https://images.unsplash.com/photo-1504148455328-c376907d081c?w=800&q=85" alt="Fast affordable blinds fixing repair Dubai">
+  </div>
+  <div class="fixing-content">
+    <span class="tag">✦ Repair &amp; Maintenance</span>
+    <h2>Fast And Pocket-friendly Blinds Fixing Services</h2>
+    <div class="divider"></div>
+    <p>Don't replace — repair! Our fast-response blinds fixing service restores your window blinds to perfect condition at a fraction of the cost of new ones. We fix all brands and types across Dubai.</p>
+    <div class="fixing-points">
+      <div class="fixing-point">
+        <div class="fixing-point-icon">⚡</div>
+        <div><h4>Same-Day Response</h4><p>Call us in the morning and our team can visit the same day for most repair jobs anywhere in Dubai.</p></div>
+      </div>
+      <div class="fixing-point">
+        <div class="fixing-point-icon">💸</div>
+        <div><h4>Affordable Pricing</h4><p>Transparent, no-surprise pricing for all repair and fixing work — we quote before we start, always.</p></div>
+      </div>
+      <div class="fixing-point">
+        <div class="fixing-point-icon">🔧</div>
+        <div><h4>All Types Fixed</h4><p>Roller, vertical, venetian, motorized, wooden, roman — we repair every blind type and brand available in Dubai.</p></div>
+      </div>
+      <div class="fixing-point">
+        <div class="fixing-point-icon">🛡</div>
+        <div><h4>Repair Warranty</h4><p>All our repair work carries a guarantee — if the same issue returns within the warranty period, we fix it free.</p></div>
+      </div>
+    </div>
+    <div style="margin-top:2rem;display:flex;gap:1rem;flex-wrap:wrap">
+      <a href="tel:+971567555833" class="btn-gold">Book a Repair</a>
+      <a href="https://dubaiblindsco.com/" class="btn-outline">All Services</a>
+    </div>
+  </div>
+</div>
+
+<!-- WHY CHOOSE US — H2 -->
+<section class="wc-section" id="why">
+  <span class="tag">✦ Our Promise</span>
+  <h2>Why Choose Us?</h2>
+  <div class="divider" style="margin:1.2rem auto 1rem"></div>
+  <p>Dubai Blinds Co. is the trusted choice for thousands of homeowners and businesses. Here's what sets us apart from every other blinds supplier in Dubai.</p>
+  <div class="wc-grid">
+    <div class="wc-card"><div class="wc-icon">🏆</div><h4>Premium Quality Materials</h4><p>High-grade, UAE-climate-tested fabrics and components that deliver lasting performance and beauty for years.</p></div>
+    <div class="wc-card"><div class="wc-icon">📐</div><h4>100% Custom Made</h4><p>We never use generic sizes. Every blind is cut and assembled to your exact window measurements for a perfect fit.</p></div>
+    <div class="wc-card"><div class="wc-icon">⚡</div><h4>24-Hour Installation</h4><p>Order today and have your new blinds fully installed by tomorrow — one of Dubai's fastest turnarounds in the industry.</p></div>
+    <div class="wc-card"><div class="wc-icon">💰</div><h4>Best Price Guaranteed</h4><p>Flat 25% discount plus free installation — the most competitive pricing without compromising on quality, ever.</p></div>
+    <div class="wc-card"><div class="wc-icon">👷</div><h4>Expert Installation Team</h4><p>Certified, trained and insured installers — clean, precise and damage-free installation every single time.</p></div>
+    <div class="wc-card"><div class="wc-icon">🤝</div><h4>Customer First Approach</h4><p>We are not satisfied until you are. Our team goes above and beyond to ensure complete customer happiness.</p></div>
+    <div class="wc-card"><div class="wc-icon">🏠</div><h4>Residential &amp; Commercial</h4><p>Single apartment window or an entire corporate tower — we handle every scale of project with equal care.</p></div>
+    <div class="wc-card"><div class="wc-icon">🔧</div><h4>Full Aftercare Support</h4><p>Repair, alteration and maintenance services keep your blinds performing perfectly long after installation.</p></div>
+  </div>
+  <div class="wc-cta">
+    <h3>Ready to Transform Your Windows?</h3>
+    <p>Get a free consultation and quote today. Our team is available 7 days a week across Dubai. Enjoy 25% OFF and free installation on all orders placed this month.</p>
+    <div class="cta-btns">
+      <a href="https://dubaiblindsco.com/" class="btn-gold">Shop Window Blinds Dubai</a>
+      <a href="tel:+971567555833" class="btn-outline">+971 567 555 833</a>
+    </div>
+  </div>
+</section>
+
+<!-- BUSINESS DIRECTORY -->
+<section class="listings-section" id="listings">
+  <span class="tag">✦ Business Directory Listings</span>
+  <h2 style="font-family:'Playfair Display',serif;font-size:clamp(1.6rem,2.5vw,2.2rem);font-weight:700">Find Us Across UAE Directories</h2>
+  <div class="divider"></div>
+  <p style="font-size:.9rem;color:var(--muted);max-width:580px;line-height:1.7">Dubai Blinds Co. is listed and verified across all major UAE business directories and review platforms. Click any listing to view our profile and read verified customer reviews.</p>
+  <div class="listings-grid">
+    <a href="https://yallapages.ae/businesses/dubai-blinds-co/" class="listing-card" target="_blank"><span class="ldot"></span>Yalla Pages</a>
+    <a href="https://www.trustpilot.com/review/dubaiblindsco.com" class="listing-card" target="_blank"><span class="ldot"></span>Trustpilot</a>
+    <a href="https://www.homify.ae/professionals/9964956/dubai-blinds-co" class="listing-card" target="_blank"><span class="ldot"></span>Homify</a>
+    <a href="https://www.houzz.com/pro/dubai-blindsco/__public" class="listing-card" target="_blank"><span class="ldot"></span>Houzz</a>
+    <a href="https://www.hidubai.com/addyourbusiness" class="listing-card" target="_blank"><span class="ldot"></span>HiDubai</a>
+    <a href="https://dubailocal.ae/" class="listing-card" target="_blank"><span class="ldot"></span>Dubai Local</a>
+    <a href="https://www.getlisteduae.com/listings/dubai-blinds-co" class="listing-card" target="_blank"><span class="ldot"></span>GetListed UAE</a>
+    <a href="https://ifind.ae/places/united-arab-emirates/dubai/dubai-1/dubai-blinds-co/" class="listing-card" target="_blank"><span class="ldot"></span>iFind.ae</a>
+    <a href="https://www.onmap.ae/dubai/home-and-office-services/dubai-blinds-co" class="listing-card" target="_blank"><span class="ldot"></span>OnMap.ae</a>
+    <a href="https://dayofdubai.com/directory/dubai-blinds-co" class="listing-card" target="_blank"><span class="ldot"></span>Day of Dubai</a>
+    <a href="https://www.citysearch.ae/dubai-blinds-co-dubai" class="listing-card" target="_blank"><span class="ldot"></span>CitySearch.ae</a>
+    <a href="https://uae.enrollbusiness.com/BusinessProfile/7707406/Dubai-Blinds-Co-Dubai/Home" class="listing-card" target="_blank"><span class="ldot"></span>Enroll Business</a>
+    <a href="https://www.bunity.com/dubai-blinds-co" class="listing-card" target="_blank"><span class="ldot"></span>Bunity</a>
+    <a href="https://www.provenexpert.com/dubai-blinds-co/" class="listing-card" target="_blank"><span class="ldot"></span>ProvenExpert</a>
+    <a href="https://www.owler.com/company/dubaiblindsco" class="listing-card" target="_blank"><span class="ldot"></span>Owler</a>
+    <a href="https://clutch.co/profile/dubai-blinds-co" class="listing-card" target="_blank"><span class="ldot"></span>Clutch</a>
+    <a href="https://www.mobileappdaily.com/company/dubai-blinds-co" class="listing-card" target="_blank"><span class="ldot"></span>MobileAppDaily</a>
+    <a href="https://app.bxb.ae/sale/listing/dubai-blinds-co-1769595516/" class="listing-card" target="_blank"><span class="ldot"></span>BXB.ae</a>
+    <a href="https://totaldubai.com/listings/ad/others,95/dubai-blinds-co" class="listing-card" target="_blank"><span class="ldot"></span>Total Dubai</a>
+    <a href="https://bizidex.com/en/dubai-blinds-co-business-services-873580" class="listing-card" target="_blank"><span class="ldot"></span>Bizidex</a>
+    <a href="https://trueen.com/business/listing/dubai-blinds-co/701445" class="listing-card" target="_blank"><span class="ldot"></span>Trueen</a>
+    <a href="https://www.storeboard.com/dubaiblindsco" class="listing-card" target="_blank"><span class="ldot"></span>Storeboard</a>
+    <a href="https://www.focalenz.com/dubai/home-services/dubai-blinds-co" class="listing-card" target="_blank"><span class="ldot"></span>Focalenz</a>
+    <a href="https://ae.localbook.org/home-services/interior-designers/dubai/dubai-blinds-co_i5182" class="listing-card" target="_blank"><span class="ldot"></span>LocalBook UAE</a>
+  </div>
+</section>
+
+<!-- WEB 2.0 -->
+<section class="web2-section" id="web2">
+  <span class="tag">✦ Online Presence</span>
+  <h2 style="font-family:'Playfair Display',serif;font-size:clamp(1.6rem,2.5vw,2.2rem);font-weight:700">Web 2.0 &amp; Publishing Platforms</h2>
+  <div class="divider"></div>
+  <p style="font-size:.9rem;color:var(--muted);max-width:580px;line-height:1.7">Explore our articles, guides and content published across leading web platforms — covering blinds installation, buying guides and interior tips for Dubai homes.</p>
+  <div class="web2-grid">
+    <a href="https://sites.google.com/view/dubaiblindsco/home" class="web2-card" target="_blank"><span style="color:var(--gold);font-size:1rem">🌐</span>Google Sites — Dubai Blinds Co.</a>
+    <a href="https://medium.com/@dubaiblindsco/blinds-installation-dubai-expert-custom-blinds-for-every-space-bfef4513a0be" class="web2-card" target="_blank"><span style="color:var(--gold);font-size:1rem">✍️</span>Medium — Blinds Installation Guide</a>
+    <a href="https://issuu.com/dubaiblindsco/docs/blinds_installation_dubai_expert_custom_blinds_f" class="web2-card" target="_blank"><span style="color:var(--gold);font-size:1rem">📖</span>Issuu — Custom Blinds Magazine</a>
+    <a href="https://dubaiblindsco.livejournal.com/436.html" class="web2-card" target="_blank"><span style="color:var(--gold);font-size:1rem">📝</span>LiveJournal — Dubai Blinds Blog</a>
+    <a href="https://codepen.io/dubaiblindsco/full/YPGjzao" class="web2-card" target="_blank"><span style="color:var(--gold);font-size:1rem">💻</span>CodePen — Interactive Demo</a>
+    <a href="https://10010789.godaddysites.com/" class="web2-card" target="_blank"><span style="color:var(--gold);font-size:1rem">🌐</span>GoDaddy Website</a>
+    <a href="https://dubaiblindsco.bravesites.com/entries/general/Dubai-Blinds-Experts-Flat-25--OFF-on-Smart-Motorized-Blinds" class="web2-card" target="_blank"><span style="color:var(--gold);font-size:1rem">🔗</span>BraveSites — 25% OFF Motorized Blinds</a>
+    <a href="https://dubaiblindsco.mystrikingly.com/" class="web2-card" target="_blank"><span style="color:var(--gold);font-size:1rem">⚡</span>Strikingly Website</a>
+    <a href="https://dubaiblindsco.wixsite.com/dubai-blinds-co" class="web2-card" target="_blank"><span style="color:var(--gold);font-size:1rem">🌐</span>Wix Site — Dubai Blinds Co.</a>
+    <a href="https://dubaiblinds.wordpress.com/2026/04/14/buy-blinds-in-dubai-free-24-hour-installation-blinds-dubai-store/" class="web2-card" target="_blank"><span style="color:var(--gold);font-size:1rem">📰</span>WordPress — Buy Blinds in Dubai</a>
+    <a href="https://dubaiblindsco.blogspot.com/2026/04/custom-blinds-dubai-blinds-dubai-25-off.html" class="web2-card" target="_blank"><span style="color:var(--gold);font-size:1rem">📰</span>Blogger — Custom Blinds Dubai 25% OFF</a>
+    <a href="https://dubaiblindsco.weebly.com/" class="web2-card" target="_blank"><span style="color:var(--gold);font-size:1rem">🌐</span>Weebly Site</a>
+    <a href="https://www.slideshare.net/slideshow/modern-blinds-dubai-grab-25-off-on-stylish-window-solutions-pdf/287072231" class="web2-card" target="_blank"><span style="color:var(--gold);font-size:1rem">📊</span>SlideShare — Modern Blinds Dubai</a>
+    <a href="https://www.scribd.com/document/1027998374/Blinds-Dubai-Buy-Custom-Window-Blinds-Up-to-25-OFF-Dubai-Blinds-Co" class="web2-card" target="_blank"><span style="color:var(--gold);font-size:1rem">📄</span>Scribd — Custom Window Blinds Guide</a>
+    <a href="https://www.docdroid.com/dO0rCkA/blinds-installation-dubai-expert-custom-blinds-for-every-space-25-off-pdf" class="web2-card" target="_blank"><span style="color:var(--gold);font-size:1rem">📑</span>DocDroid — Installation Guide PDF</a>
+    <a href="https://www.yumpu.com/en/document/view/71092253/blinds-installation-dubai-expert-custom-blinds-for-every-space-25-off" class="web2-card" target="_blank"><span style="color:var(--gold);font-size:1rem">📋</span>Yumpu — Blinds Catalogue</a>
+    <a href="https://dribbble.com/dubai-blinds-co" class="web2-card" target="_blank"><span style="color:var(--gold);font-size:1rem">🎨</span>Dribbble Portfolio</a>
+    <a href="https://flipboard.com/@dubaiblindsco/dubai-blinds-co-l24ll7hez?from=share" class="web2-card" target="_blank"><span style="color:var(--gold);font-size:1rem">📰</span>Flipboard Magazine</a>
+    <a href="https://mix.com/!1361612429653448704?via=dubaiblindsco" class="web2-card" target="_blank"><span style="color:var(--gold);font-size:1rem">🔀</span>Mix.com Profile</a>
+    <a href="https://magic.ly/dubaiblindsco" class="web2-card" target="_blank"><span style="color:var(--gold);font-size:1rem">✨</span>Magic.ly Link Page</a>
+    <a href="https://www.linkedin.com/posts/dubai-blinds-co-311097401_dubaiblinds-blindsdubai-blindsindubai-activity-7450089669213528064-5lm3" class="web2-card" target="_blank"><span style="color:var(--gold);font-size:1rem">💼</span>LinkedIn Post</a>
+    <a href="https://x.com/dubai_blinds_co/status/2044289203887059327?s=20" class="web2-card" target="_blank"><span style="color:var(--gold);font-size:1rem">𝕏</span>X / Twitter — Post 1</a>
+    <a href="https://x.com/dubai_blinds_co/status/2044315281472823549?s=20" class="web2-card" target="_blank"><span style="color:var(--gold);font-size:1rem">𝕏</span>X / Twitter — Post 2</a>
+    <a href="https://x.com/dubai_blinds_co/status/2045365848370774394?s=20" class="web2-card" target="_blank"><span style="color:var(--gold);font-size:1rem">𝕏</span>X / Twitter — Post 3</a>
+  </div>
+</section>
+
+<!-- PROFILE BACKLINKS -->
+<section class="profiles-section" id="profiles">
+  <span class="tag">✦ Social &amp; Profile Backlinks</span>
+  <h2 style="font-family:'Playfair Display',serif;font-size:clamp(1.6rem,2.5vw,2.2rem);font-weight:700">Connect With Us Everywhere</h2>
+  <div class="divider"></div>
+  <p style="font-size:.9rem;color:var(--muted);max-width:580px;line-height:1.7">Follow, connect and interact with Dubai Blinds Co. across our growing network of social, creative and professional platforms worldwide.</p>
+  <div class="profiles-grid">
+    <a href="https://www.quora.com/profile/Dubai-Blinds-Co" class="profile-pill" target="_blank">Quora</a>
+    <a href="https://gravatar.com/almost06351dd3bb" class="profile-pill" target="_blank">Gravatar</a>
+    <a href="https://www.ted.com/profiles/51136297" class="profile-pill" target="_blank">TED</a>
+    <a href="https://www.tripadvisor.com/Profile/dubaib2026" class="profile-pill" target="_blank">TripAdvisor</a>
+    <a href="https://www.pexels.com/@dubai-blinds-co-2158558263/" class="profile-pill" target="_blank">Pexels</a>
+    <a href="https://www.producthunt.com/@dubai_blinds_co" class="profile-pill" target="_blank">Product Hunt</a>
+    <a href="https://vppages.com/author/dubaiblindsco/" class="profile-pill" target="_blank">VPPages</a>
+    <a href="https://www.scener.com/@dubaiblindsco" class="profile-pill" target="_blank">Scener</a>
+    <a href="https://gifyu.com/dubaiblindsco" class="profile-pill" target="_blank">Gifyu</a>
+    <a href="https://soundcloud.com/dubai-blinds-co" class="profile-pill" target="_blank">SoundCloud</a>
+    <a href="https://www.intensedebate.com/people/dubaiblindsco" class="profile-pill" target="_blank">IntenseDebate</a>
+    <a href="https://www.kickstarter.com/profile/1699930038/about" class="profile-pill" target="_blank">Kickstarter</a>
+    <a href="https://pinshape.com/users/8908642-dubaiblindsco?tab=designs" class="profile-pill" target="_blank">Pinshape</a>
+    <a href="https://audiomack.com/dubaiblindsco" class="profile-pill" target="_blank">Audiomack</a>
+    <a href="https://www.goodreads.com/user/show/198792242-dubai-co" class="profile-pill" target="_blank">Goodreads</a>
+    <a href="https://triberr.com/dubaiblindsco" class="profile-pill" target="_blank">Triberr</a>
+    <a href="https://www.exchangle.com/dubaiblindsco" class="profile-pill" target="_blank">Exchangle</a>
+    <a href="https://igli.me/dubaiblindsco" class="profile-pill" target="_blank">Igli.me</a>
+    <a href="https://wakelet.com/@DubaiBlindsCO41695" class="profile-pill" target="_blank">Wakelet</a>
+    <a href="https://pixabay.com/users/54684967/" class="profile-pill" target="_blank">Pixabay</a>
+    <a href="https://peatix.com/user/28942600/view?type=owner" class="profile-pill" target="_blank">Peatix</a>
+    <a href="https://myanimelist.net/profile/dubaiblindsco" class="profile-pill" target="_blank">MyAnimeList</a>
+    <a href="https://hub.docker.com/u/dubaibindsco" class="profile-pill" target="_blank">Docker Hub</a>
+    <a href="https://www.designspiration.com/dubaiblindsco/" class="profile-pill" target="_blank">Designspiration</a>
+    <a href="https://seekingalpha.com/user/64183108" class="profile-pill" target="_blank">Seeking Alpha</a>
+    <a href="https://stackshare.io/dubaiblindsco/dubai-blinds-co" class="profile-pill" target="_blank">StackShare</a>
+    <a href="https://unsplash.com/@dubaiblindsco" class="profile-pill" target="_blank">Unsplash</a>
+    <a href="https://www.figma.com/@dubaiblindsco" class="profile-pill" target="_blank">Figma</a>
+    <a href="https://github.com/dubaiblindsco-star" class="profile-pill" target="_blank">GitHub</a>
+    <a href="https://stackoverflow.com/users/32386041/dubai-blinds-co" class="profile-pill" target="_blank">Stack Overflow</a>
+    <a href="https://flipboard.com/@DubaiBlindsCO?from=share" class="profile-pill" target="_blank">Flipboard</a>
+    <a href="https://opencollective.com/dubai-blinds-co" class="profile-pill" target="_blank">Open Collective</a>
+    <a href="https://spoutible.com/dubaiblindsco" class="profile-pill" target="_blank">Spoutible</a>
+    <a href="https://heylink.me/dubaiblindsco/" class="profile-pill" target="_blank">Heylink.me</a>
+    <a href="https://solo.to/dubaiblindsco" class="profile-pill" target="_blank">Solo.to</a>
+    <a href="https://linktr.ee/dubaiblindsco" class="profile-pill" target="_blank">Linktree</a>
+    <a href="https://www.notebook.ai/@dubaiblindsco" class="profile-pill" target="_blank">Notebook AI</a>
+    <a href="https://wemakeit.com/users/dubaiblindsco" class="profile-pill" target="_blank">Wemakeit</a>
+    <a href="https://letterboxd.com/dubaiblindsco/" class="profile-pill" target="_blank">Letterboxd</a>
+    <a href="https://www.magcloud.com/user/dubaiblinds" class="profile-pill" target="_blank">MagCloud</a>
+    <a href="https://giphy.com/channel/dubaiblindsco" class="profile-pill" target="_blank">Giphy</a>
+    <a href="https://fairygodboss.com/users/profile/GlLFh7NTAk/Dubai-Blinds-CO" class="profile-pill" target="_blank">FairyGodBoss</a>
+    <a href="https://dubaiblindsco.pixieset.com/" class="profile-pill" target="_blank">Pixieset</a>
+    <a href="https://buildd.co/u/dubaiblindsco" class="profile-pill" target="_blank">Buildd.co</a>
+    <a href="https://www.bitsdujour.com/profiles/KTsGT8" class="profile-pill" target="_blank">BitsduJour</a>
+    <a href="https://divisionmidway.org/jobs/author/dubaiblindsco/" class="profile-pill" target="_blank">Division Midway</a>
+    <a href="https://cloutapps.com/dubaiblindsco" class="profile-pill" target="_blank">CloutApps</a>
+    <a href="https://purekonect.com/dubaiblindsco" class="profile-pill" target="_blank">PureKonect</a>
+    <a href="https://www.twitch.tv/dubaiblindsco" class="profile-pill" target="_blank">Twitch</a>
+    <a href="https://www.dailymotion.com/user/dubai.phw171" class="profile-pill" target="_blank">Dailymotion</a>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-section" id="contact">
+  <div>
+    <span class="tag">✦ Get In Touch</span>
+    <h2>Visit or Contact Us Today</h2>
+    <div class="divider"></div>
+    <p>Ready to upgrade your windows? Our team is available 7 days a week to help you choose the perfect <a href="https://dubaiblindsco.com/" style="color:var(--gold);font-weight:500">blinds in Dubai</a> — call us, visit our showroom, or request a free home consultation.</p>
+    <div class="contact-details">
+      <div class="cdet">
+        <div class="cdet-icon">📞</div>
+        <div><strong>Phone / WhatsApp</strong><a href="tel:+971567555833">+971 567 555 833</a></div>
+      </div>
+      <div class="cdet">
+        <div class="cdet-icon">📍</div>
+        <div><strong>Showroom Address</strong><span>Street 3B – Al Quoz 1 – Dubai, UAE</span></div>
+      </div>
+      <div class="cdet">
+        <div class="cdet-icon">🌐</div>
+        <div><strong>Website</strong><a href="https://dubaiblindsco.com/" target="_blank">dubaiblindsco.com</a></div>
+      </div>
+    </div>
+    <div style="display:flex;gap:1rem;flex-wrap:wrap">
+      <a href="tel:+971567555833" class="btn-gold">Call for Free Quote</a>
+      <a href="https://dubaiblindsco.com/" class="btn-outline">Visit Website</a>
+    </div>
+  </div>
+  <div class="contact-map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.5!2d55.217!3d25.175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6956c8c1a39d%3A0x0!2zMjXCsDEwJzMwIE4gNTXCsDEzJzAxIEU!5e0!3m2!1sen!2sae!4v1714000000000" allowfullscreen loading="lazy"></iframe>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div>
+      <div class="footer-logo">Dubai Blinds Co.</div>
+      <p class="footer-about">Premium custom window blinds for residential and commercial spaces across Dubai. Expert installation, superior quality, guaranteed satisfaction. Call today for a free quote and enjoy 25% OFF all orders.</p>
+      <p style="font-size:.8rem;color:var(--gold);margin-top:.8rem">📍 Street 3B – Al Quoz 1 – Dubai, UAE</p>
+      <p style="font-size:.8rem;color:var(--gold);margin-top:.3rem">📞 +971 567 555 833</p>
+    </div>
+    <div class="footer-col">
+      <h4>Products</h4>
+      <ul>
+        <li><a href="https://dubaiblindsco.com/blackout-blinds/">Blackout Blinds</a></li>
+        <li><a href="https://dubaiblindsco.com/duplex-blinds/">Duplex Blinds</a></li>
+        <li><a href="https://dubaiblindsco.com/motorized-blinds/">Motorized Blinds</a></li>
+        <li><a href="https://dubaiblindsco.com/roller-blinds/">Roller Blinds</a></li>
+        <li><a href="https://dubaiblindsco.com/roman-blinds/">Roman Blinds</a></li>
+        <li><a href="https://dubaiblindsco.com/vertical-blinds/">Vertical Blinds</a></li>
+        <li><a href="https://dubaiblindsco.com/venetian-blinds/">Venetian Blinds</a></li>
+        <li><a href="https://dubaiblindsco.com/wooden-blinds/">Wooden Blinds</a></li>
+        <li><a href="https://dubaiblindsco.com/panel-blinds/">Panel Blinds</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="https://dubaiblindsco.com/">Blinds Installation</a></li>
+        <li><a href="https://dubaiblindsco.com/">Custom Blinds</a></li>
+        <li><a href="https://dubaiblindsco.com/">Blinds Fixing</a></li>
+        <li><a href="https://dubaiblindsco.com/">Blinds Alteration</a></li>
+        <li><a href="https://dubaiblindsco.com/">Blinds Accessories</a></li>
+        <li><a href="https://dubaiblindsco.com/">Commercial Blinds</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Connect</h4>
+      <ul>
+        <li><a href="https://www.quora.com/profile/Dubai-Blinds-Co" target="_blank">Quora</a></li>
+        <li><a href="https://linktr.ee/dubaiblindsco" target="_blank">Linktree</a></li>
+        <li><a href="https://www.houzz.com/pro/dubai-blindsco/__public" target="_blank">Houzz</a></li>
+        <li><a href="https://www.trustpilot.com/review/dubaiblindsco.com" target="_blank">Trustpilot</a></li>
+        <li><a href="https://medium.com/@dubaiblindsco" target="_blank">Medium</a></li>
+        <li><a href="https://dribbble.com/dubai-blinds-co" target="_blank">Dribbble</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">© 2026 Dubai Blinds Co. All rights reserved. | Street 3B – Al Quoz 1 – Dubai, UAE</span>
+    <a href="https://dubaiblindsco.com/" style="font-size:.78rem;color:var(--gold)">dubaiblindsco.com</a>
+  </div>
+</footer>
+
+</body>
+</html>
